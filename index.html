@@ -151,7 +151,7 @@
         const MentorshipCard = ({ item }) => (
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col md:flex-row items-start justify-between gap-4">
                 <div><h3 className="text-lg font-bold text-gray-900">{item.title}</h3><p className="text-sm text-gray-600">Mentor: <span className="font-semibold text-indigo-600">{item.mentor}</span></p><p className="text-sm text-gray-500 mt-1">Expertise: {item.expertise}</p></div>
-                <button disabled={!item.available} className="mt-4 md:mt-0 w-full md:w-auto px-6 py-2 rounded-lg font-semibold text-white transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed bg-indigo-600 hover:bg-indigo-700">{item.available ? 'Request Mentorship' : 'Unavailable'}</button>
+                <button disabled={!item.available} className="mt-4 md:mt-0 w-full md:w-auto px-6 py-2 rounded-lg font-semibold text-white transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed bg-indigo-600 hover:bg-indigo-700">{item.available ? 'Accept Mentorship' : 'Unavailable'}</button>
             </div>
         );
 
